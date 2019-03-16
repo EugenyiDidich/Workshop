@@ -1,0 +1,12 @@
+{
+  "name": "workflow-les1",
+  "description": "flow",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "normalize-css": "normalize.css#^5.0.0",
+    "bxslider-4": "bxSlider#^4.2.5",
+    "jquery": "2.1.0"
+  }
+}

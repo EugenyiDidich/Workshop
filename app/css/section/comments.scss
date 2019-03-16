@@ -1,0 +1,50 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+@import '../misc/vars.scss';
+
+.comments {
+	background-color: #faf9f9;
+	padding-top: 90px; 
+}
+
+.comment__list {
+	font-size: 0;
+}
+
+.comment__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	padding: 0 30px;
+	margin-bottom: 80px; 
+	position: relative;
+}
+
+.comment__item::before {
+	position: absolute;
+	content: "";
+	transform: translate(23%, 80%);
+	bottom: 100%;
+	right: 100%;
+	width: 37px;
+	height: 37px;
+	background: url('/assets/img/icon/comment.png') no-repeat;
+	-webkit-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover; 
+}
+
+.comment__name {
+	font-size: 18px;
+	@include roboto(bold);
+	margin-bottom: 10px;
+}
+
+.comment__about {
+	margin-bottom: 10px;
+}
+
+.comment__about, .comment__desc {
+	font-size: 16px;
+	color: $text
+}

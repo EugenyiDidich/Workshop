@@ -1,0 +1,82 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+@import '../misc/vars.scss';
+
+.footer {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: $dark;
+	font-size: 0; 
+}
+
+.footer__top {
+	margin-bottom: 50px;
+}
+
+.footer__logo, .footer__icons, .info__block, .copyright,
+.info__left, .info__right {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer__logo {
+	width: 30%;
+}
+
+.footer__icons {
+	width: 70%;
+	text-align: right;
+}
+
+.footer .icons__item {
+	.icons__link {
+		color: $grey; 
+	}
+
+	&:hover {
+		.icons__link {
+			color: #fff; 
+		}
+	}
+}
+
+.footer__bottom, .info__block {
+	font-size: 0;
+}
+
+.info__block {
+	width: 60%;
+	text-align: left;
+}
+
+.info__left, .info__right {
+	width: 35%;
+}
+
+.info__left {
+	margin-right: 10px;
+}
+
+.copyright {
+	width: 40%;
+	text-align: right;
+	color: $grey;
+	font-size: 16px;
+	padding-left: 18%;
+}
+
+.info__item {
+	margin-bottom: 10px;
+	&:hover {
+		.info__link {
+			text-decoration: underline;
+		}
+	}
+}
+.info__link {
+	display: block;
+	text-decoration: none;
+	color: $grey;
+	font-size: 16px;
+	@include transition();
+}

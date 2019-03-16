@@ -1,0 +1,47 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+@import '../misc/vars.scss';
+
+.photoblog {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.photo__list {
+	display: block;
+	@extend %clearfix;
+	margin-bottom: 50px;
+}
+
+.photo__item {
+	display: block;
+	float: right;
+	width: 25%;
+	height: 236px;
+	@extend %clearfix;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.photoblog .float__item {
+	width: 50%;
+	float: right;
+	margin-top: 60px;
+	padding-right: 15%;
+	
+	.title {
+		margin-bottom: 30px;
+	}
+
+	.arrow {
+		margin: 0;
+	} 
+}
+
+.photoblog .about__desc-bot {
+	width: 100%;
+	font-size: 0;
+}

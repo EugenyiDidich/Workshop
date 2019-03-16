@@ -1,0 +1,81 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+@import '../misc/vars.scss';
+
+.advantage {
+	padding-top: 90px;
+}
+.advantage .quest__item {
+	width: 47%;
+}
+
+.advantage .about__story {
+	width: 40%;
+}
+
+.gallery {
+	font-size: 0;
+	display: block;
+	@extend %clearfix;
+	margin-bottom: 50px;
+}
+
+.gallery__item {
+	display: block;
+	position: relative;
+	width: 25%;
+	height: 236px;
+	float: left; 
+	@extend %clearfix;
+}
+
+.gallery__img {
+	position: absolute;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 135; 
+}
+
+.gallery__item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 75%, rgba(0,0,0,.1) 95%, rgba(0,0,0,.1) 100%);
+	z-index: 235;
+}
+
+.gallery .float__item {
+	width: 30%;
+	float: left;
+	margin-top: 60px;
+	margin-left: 5%;
+	
+	.arrow {
+		margin: 0;
+	} 
+}
+
+.gallery .title {
+	margin-bottom: 30px;
+}
+
+.about__left, .about__right {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	font-size: 16px;
+}
+
+.about__left {
+	margin-right: 10%;
+}
+
+.advantage .about__desc-bot {
+	width: 100%;
+	font-size: 0;
+}

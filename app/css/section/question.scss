@@ -1,0 +1,67 @@
+@import '../misc/mixins.scss';
+@import '../misc/fonts.scss';
+@import '../misc/vars.scss';
+
+.question {
+	padding-top: 100px;
+}
+
+h3.title {
+	@include roboto(bold);
+	font-size: 30px;
+	text-align: center;
+	color: $grey; 
+	margin-bottom: 25px;
+}
+
+.title__desc {
+	font-size: 18px;
+	color: $text; 
+	text-align: center;
+	width: 45%;
+	margin: 0 auto 120px auto;
+}
+
+.arrow {
+	display: block;
+	margin: 0 auto;
+	height: 9px;
+	width: 68px;
+	background-image: url('/assets/img/icon/arrow.png');
+	margin-bottom: 25px; 
+}
+
+.quest__list {
+	font-size: 0;
+}
+
+.quest__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 31%;
+	margin-right: 10px;
+	margin-bottom: 70px;
+}
+
+.quest__img {
+	width: 73px;
+	height: 73px;
+	margin-bottom: 30px;
+	
+	img {
+		max-width: 100%;
+		min-height: 100%;
+	}
+}
+
+.quest__name {
+	@include roboto(bold);
+	font-size: 18px;
+	color: $grey;
+	margin-bottom: 30px;
+}
+
+.quest__about {
+	font-size: 16px;
+	color: $text;
+}
